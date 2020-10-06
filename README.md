@@ -1,7 +1,5 @@
 # Android-with-Kotlin
 Kotlin code example for android projects.
-<<<<<<< Updated upstream
-=======
 
 ## Activity life cycle
 ### Navigation between two activity
@@ -32,6 +30,3 @@ Press home button->
 /dpm.android.with.kotlin D/MainActivity: onRestart...
 /dpm.android.with.kotlin D/MainActivity: onStart...
 /dpm.android.with.kotlin D/MainActivity: onResume...
-
-
->>>>>>> Stashed changes

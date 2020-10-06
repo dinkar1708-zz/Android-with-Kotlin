@@ -4,15 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import dpm.android.with.kotlin.R
 
-<<<<<<< Updated upstream
-import android.support.design.widget.Snackbar
-import android.support.design.widget.NavigationView
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
-=======
 import android.util.Log
->>>>>>> Stashed changes
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -44,9 +36,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
 
-<<<<<<< Updated upstream
-        welcome.text = "Hey i have done setup in kotlin....playing with text view...."
-=======
         button.setOnClickListener {
             navigateToSecondActivity()
         }
@@ -54,7 +43,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun navigateToSecondActivity() {
         startActivity(Intent(this, SecondActivity::class.java))
->>>>>>> Stashed changes
     }
 
     override fun onBackPressed() {
