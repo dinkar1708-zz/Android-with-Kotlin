@@ -31,24 +31,24 @@ class ComposeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApp {
-                MyScreenContent()
+            ComposeApplication {
+                ComposeActivityScreenContent()
             }
         }
     }
 }
 
 @Composable
-fun MyApp(content: @Composable () -> Unit) {
+fun ComposeApplication(content: @Composable () -> Unit) {
     BasicsCodelabTheme {
-        Surface(color = Color.Yellow) {
+        Surface(color = Color.Gray) {
             content()
         }
     }
 }
 
 @Composable
-fun MyScreenContent(names: List<String> = List(100) { "Sample List #$it" }) {
+fun ComposeActivityScreenContent(names: List<String> = List(100) { "#$it" }) {
     val counterState = remember { mutableStateOf(0) }
 
     Column(modifier = Modifier.fillMaxHeight()) {
@@ -75,10 +75,10 @@ fun NameList(names: List<String>, modifier: Modifier = Modifier) {
 @Composable
 fun Greeting(name: String) {
     var isSelected by remember { mutableStateOf(false) }
-    val backgroundColor by animateColorAsState(if (isSelected) Color.Red else Color.Transparent)
+    val backgroundColor by animateColorAsState(if (isSelected) Color.White else Color.Transparent)
 
     Text(
-        text = "Hello $name!",
+        text = "Track $name!",
         modifier = Modifier
             .padding(24.dp)
             .background(color = backgroundColor)
@@ -94,14 +94,14 @@ fun Counter(count: Int, updateCount: (Int) -> Unit) {
             backgroundColor = if (count > 5) Color.Green else Color.White
         )
     ) {
-        Text("I've been clicked $count times")
+        Text("Play $count count")
     }
 }
 
 @Preview("MyScreen preview")
 @Composable
 fun DefaultPreview() {
-    MyApp {
-        MyScreenContent()
+    ComposeApplication {
+        ComposeActivityScreenContent()
     }
 }
