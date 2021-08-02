@@ -14,7 +14,7 @@
 
         <activity
             android:exported="true"
-            android:name=".lifecycle.MainActivity"
+            android:name=".lifecycle.compose.ComposeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
