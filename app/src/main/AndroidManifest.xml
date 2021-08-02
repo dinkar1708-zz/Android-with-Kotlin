@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".lifecycle.SecondActivity" />
+        <activity android:name=".lifecycle.old.SecondActivity" />
 
         <activity
             android:exported="true"
