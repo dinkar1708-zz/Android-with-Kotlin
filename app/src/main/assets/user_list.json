@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "dinkar1708",
+      "type": "User",
+      "url": "https://api.github.com/users/dinkar1708",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14831652?v=4",
+      "score": 1.0
+    },
+    {
+      "id": 2,
+      "login": "dinkar1708-zz",
+      "type": "User",
+      "url": "https://api.github.com/users/dinkar1708-zz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28217318?v=4",
+      "score": 1.0
+    }
+  ]
+}

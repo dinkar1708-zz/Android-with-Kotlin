@@ -1,0 +1,22 @@
+{
+  "userRepositories": [
+    {
+      "id": 1,
+      "name": "kotlin-architecture",
+      "login": "dinkar1708",
+      "type": "User",
+      "url": "https://api.github.com/users/dinkar1708",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14831652?v=4",
+      "description": "Kotlin exmaple"
+    },
+    {
+      "id": 2,
+      "name": "android-architecture",
+      "login": "dinkar1708-zz",
+      "type": "User",
+      "url": "https://api.github.com/users/dinkar1708-zz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28217318?v=4",
+      "description": "android-architecture example"
+    }
+  ]
+}
