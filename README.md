@@ -6,6 +6,9 @@
 2. Feature
 - Show repositories of selected user from local
 
+# Mock data for testing
+- library name
+- 
 # TODO
 - use api for features
 - fix search repository when select second user
