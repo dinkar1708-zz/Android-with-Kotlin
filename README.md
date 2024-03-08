@@ -1,34 +1,52 @@
-# MVVM
-# Repository list
+# MVVM Architecture
 
-1. Feature
-- Show users from local
-2. Feature
-- Show repositories of selected user from local
+## To-Do
+- Use API for Features
+- Fix Search Repository when selecting the second user
 
-# Mock data for testing
-- library name
+# Features
+## Github Users List by given name
+- Show Users from Local
+- TODO load user from github api
+  ![Screenshot_1709913809](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/fe1d7aea-31f5-4d2f-bb5f-2aa39bf3a913)
+
+## Show repositories list for selected user
+- Show Repositories of Selected User from Local
+- TODO load repository from github api
+  ![Screenshot_1709913814](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/431ad656-08a1-4f6b-b7cf-fe8ee4f5ebc6)
+
+## Mock Data for Testing
 - 
-# TODO
-- use api for features
-- fix search repository when select second user
 
-# How to Create Test Cases
-## A. Repository impl test cases
-1. **Click on the Class for which you want to create a test case:**
-  - For example, to create a test case for the `SearchRepositoryImpl` class, hover your mouse over it and click to create.
 
-   ![Step 1](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/d5d48945-08ff-4b89-a500-747b1e937dc1)
+## How to Use Resources
+
+### How to Use Color
+- Defined in `com.example.clean.ui.theme.Theme.kt` file.
+- Example: `MaterialTheme.colorScheme.background`
+
+### How to Use Font Size
+- Defined in `com.example.clean.ui.theme.Typography.kt` file.
+- Use as: `style = MaterialTheme.typography.bodyLarge`
+
+## How to Create Test Cases
+
+### Repository Implementation Test Cases
+
+1. **Click on the Class for Which You Want to Create a Test Case:**
+- For example, to create a test case for the `SearchRepositoryImpl` class, hover your mouse over it and click to create.
+
+![Step 1](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/d5d48945-08ff-4b89-a500-747b1e937dc1)
 
 2. **Select the Checkbox for Desired Functions:**
-  - After clicking to create a test case, select the checkboxes corresponding to the functions you want to include in the test case.
+- After clicking to create a test case, select the checkboxes corresponding to the functions you want to include in the test case.
 
-   ![Step 2](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/722a9d19-775f-4750-ac3e-234a3ef4fe44)
+![Step 2](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/722a9d19-775f-4750-ac3e-234a3ef4fe44)
 
-3. **Generate Test Inside the Test Folder:**
-  - Once you've selected the functions, the system will generate the test inside the test folder.
+4. **Generate Test Inside the Test Folder:**
+- Once you've selected the functions, the system will generate the test inside the test folder.
 
-   ![Step 3](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/feba483c-396f-44c0-8fb4-7e2689060840)
+![Step 3](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/feba483c-396f-44c0-8fb4-7e2689060840)
 
 Follow these steps to efficiently create test cases for your classes.
 

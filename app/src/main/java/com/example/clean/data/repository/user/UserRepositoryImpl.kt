@@ -9,7 +9,6 @@ import com.example.clean.di.DefaultDispatcher
 import com.example.clean.domain.model.UserRepo
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -25,7 +24,7 @@ class UserRepositoryImpl @Inject constructor(
         // TODO add more case here read from api etc
         // save to local if empty
 //        if (localDataSource.isEmpty(id)) // comment to test load always
-            refreshUserRepositories(login)
+        refreshUserRepositories(login)
         // return data
         return localDataSource.observeAll().map { repositories ->
             withContext(dispatcher) {
@@ -47,8 +46,8 @@ class UserRepositoryImpl @Inject constructor(
                     Log.d("dppppp", "Got save data $a")
                     localDataSource.upsertAll(it.userRepositories.toLocal())
                 }
-                .onFailure {
-                    error -> Log.d("dppppp", "Error refreshing in the database $error")
+                .onFailure { error ->
+                    Log.d("dppppp", "Error refreshing in the database $error")
                     error.printStackTrace()
 
                 }

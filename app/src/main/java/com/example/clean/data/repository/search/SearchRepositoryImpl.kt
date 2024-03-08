@@ -21,7 +21,7 @@ class SearchRepositoryImpl @Inject constructor(
 
     override suspend fun searchUsers(): Flow<List<User>> {
 //        if (localDataSource.isEmpty()) {
-            refreshUsers()
+        refreshUsers()
 //        }
 
         return localDataSource.observeAll()
