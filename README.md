@@ -1,6 +1,7 @@
 # MVVM Architecture
 
-## To-Do
+## TODO
+- Complete all test cases functions
 - Use API for Features
 - Fix Search Repository when selecting the second user
 
@@ -18,9 +19,7 @@
 ## Mock Data for Testing
 - Documentation https://mockk.io/
 
-
 ## How to Use Resources
-
 ### How to Use Color
 - Defined in `com.example.clean.ui.theme.Theme.kt` file.
 - Example: `MaterialTheme.colorScheme.background`
@@ -49,9 +48,11 @@
 ![Step 3](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/feba483c-396f-44c0-8fb4-7e2689060840)
 
 Follow these steps to efficiently create test cases for your classes.
+### all test cases screen shot
+<img width="1238" alt="Screenshot 2024-03-09 at 1 36 56" src="https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/111db719-d401-4ac1-b4d7-0cdaf8f03d50">
 
-### List Users by User Name
-
+# APIs
+## List Users by User Name
 3. **Search:**
 - Search Repositories: `https://api.github.com/search/repositories?q=:query`
 - Search Users: `https://api.github.com/search/users?q=:query`

@@ -1,19 +1,25 @@
-package com.example.clean.data.repository.user
+package com.example.clean.ui.features.userrepository
 
-import com.example.clean.data.source.local.dao.UserRepoDao
-import com.example.clean.data.source.network.NetworkDataSource
+import com.example.clean.domain.model.User
 import com.example.clean.domain.model.UserRepo
+import com.example.clean.domain.usecase.UserRepositoryUseCase
 import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
-import org.junit.After
-import org.junit.Before
 
-@OptIn(ExperimentalCoroutinesApi::class)
-class UserRepositoryImplTest {
+import org.junit.jupiter.api.AfterEach
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+
+class UserRepoScreenViewModelTest {
+    private val user = User(
+        id = 1,
+        login = "dinkar1708",
+        type = "User",
+        avatarUrl = "uavatarUrlavatarUrlavatarUrlavatarUrlrl",
+    )
 
     private val repositoriesTestData = mutableListOf(
         UserRepo(
@@ -33,24 +39,22 @@ class UserRepositoryImplTest {
         )
     )
 
-    private val mockNetworkDataSource: NetworkDataSource = mockk()
-    private val mockLocalDataSource: UserRepoDao = mockk()
+    private val mockUserRepositoryUseCase: UserRepositoryUseCase = mockk()
     private val testDispatcher = StandardTestDispatcher()
-    private lateinit var repository: UserRepositoryImpl
+    private lateinit var viewModel: UserRepoScreenViewModel
 
-    @Before
+    @BeforeEach
     fun setUp() {
         Dispatchers.setMain(testDispatcher)
-        repository = UserRepositoryImpl(
-            networkDataSource = mockNetworkDataSource,
-            localDataSource = mockLocalDataSource,
-            dispatcher = testDispatcher
-        )
+        viewModel = UserRepoScreenViewModel(mockUserRepositoryUseCase, testDispatcher)
     }
 
-    @After
-    fun teardown() {
+    @AfterEach
+    fun tearDown() {
         Dispatchers.resetMain()
     }
 
+    @Test
+    fun getUserRepositories() {
+    }
 }
