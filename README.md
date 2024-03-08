@@ -12,6 +12,13 @@
 # TODO
 - use api for features
 - fix search repository when select second user
+# How to use resources
+## How to use color
+ - defined here package com.example.clean.ui.theme -> Theme.kt file 
+ -  MaterialTheme.colorScheme.background
+## How to use font size
+- define here com.example.clean.ui.theme -> Typography.kt file
+- use as style = MaterialTheme.typography.bodyLarge,
 
 # How to Create Test Cases
 ## A. Repository impl test cases
