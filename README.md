@@ -9,12 +9,12 @@
 ## Github Users List by given name
 - Show Users from Local
 - TODO load user from github api
-  <img width="200" alt="Screenshot 2024-03-09 at 1 41 01" src="https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/7364bf51-5f6e-4b95-b53e-5133233d6ca5">
+  <img width="200" alt="Screenshot 2024-03-09 at 1 41 14" src="https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/b528827b-7729-4d5c-ae89-a1f004ff01cf">
 
 ## Show repositories list for selected user
 - Show Repositories of Selected User from Local
 - TODO load repository from github api
-  <img width="200" alt="Screenshot 2024-03-09 at 1 41 14" src="https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/b528827b-7729-4d5c-ae89-a1f004ff01cf">
+  <img width="200" alt="Screenshot 2024-03-09 at 1 41 01" src="https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/7364bf51-5f6e-4b95-b53e-5133233d6ca5">
 
 ## Mock Data for Testing
 - Documentation https://mockk.io/
