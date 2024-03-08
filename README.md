@@ -13,6 +13,25 @@
 - use api for features
 - fix search repository when select second user
 
+# How to Create Test Cases
+## A. Repository impl test cases
+1. **Click on the Class for which you want to create a test case:**
+  - For example, to create a test case for the `SearchRepositoryImpl` class, hover your mouse over it and click to create.
+
+   ![Step 1](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/d5d48945-08ff-4b89-a500-747b1e937dc1)
+
+2. **Select the Checkbox for Desired Functions:**
+  - After clicking to create a test case, select the checkboxes corresponding to the functions you want to include in the test case.
+
+   ![Step 2](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/722a9d19-775f-4750-ac3e-234a3ef4fe44)
+
+3. **Generate Test Inside the Test Folder:**
+  - Once you've selected the functions, the system will generate the test inside the test folder.
+
+   ![Step 3](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/feba483c-396f-44c0-8fb4-7e2689060840)
+
+Follow these steps to efficiently create test cases for your classes.
+
 ### List Users by User Name
 
 3. **Search:**
