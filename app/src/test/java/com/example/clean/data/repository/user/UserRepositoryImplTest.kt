@@ -31,8 +31,8 @@ class UserRepositoryImplTest {
             avatarUrl = "",
             description = "sdlfjsdf dfjlkdj f"
         )
-
     )
+
     private val mockNetworkDataSource: NetworkDataSource = mockk()
     private val mockLocalDataSource: UserRepoDao = mockk()
     private val testDispatcher = StandardTestDispatcher()
