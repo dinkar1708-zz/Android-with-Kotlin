@@ -80,7 +80,7 @@ fun ScreenCommonHeaderPreviewWithAllComponents() {
     AppLightTheme {
         Surface {
             AppActionBarView(modifier = Modifier.fillMaxWidth(),
-                headerText = "Institution",
+                headerText = "Text",
                 showBackButton = true,
                 onBackClick = {})
         }
@@ -93,7 +93,7 @@ fun ScreenCommonHeaderPreview() {
     AppLightTheme {
         Surface {
             AppActionBarView(modifier = Modifier.fillMaxWidth(),
-                headerText = "Institution",
+                headerText = "Text",
                 showBackButton = false,
                 onBackClick = {})
         }
