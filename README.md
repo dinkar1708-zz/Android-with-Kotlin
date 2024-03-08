@@ -1,6 +1,7 @@
 # MVVM Architecture
 
-## To-Do
+## TODO
+- Complete all test cases functions
 - Use API for Features
 - Fix Search Repository when selecting the second user
 
