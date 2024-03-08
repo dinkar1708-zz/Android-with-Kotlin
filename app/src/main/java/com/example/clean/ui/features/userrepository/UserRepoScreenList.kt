@@ -21,7 +21,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.clean.domain.model.User
 import com.example.clean.domain.model.UserRepo
-import com.example.clean.ui.components.FlexibleSingleLineText
 import com.example.clean.ui.theme.AppLightTheme
 @Composable
 fun UserRepoListScreen(modifier: Modifier, repositories: List<UserRepo>, user: User) {
@@ -52,12 +51,9 @@ fun RepositoryListItem(userRepo: UserRepo) {
                     color = Color.White, fontSize = 18.sp
                 ),
             )
-            FlexibleSingleLineText(
-                Modifier
-                    .weight(1f)
-                    .padding(horizontal = 18.dp),
-                userRepo.type
-            )
+
+            Text(text = userRepo.type)
+
             Text(text = userRepo.description)
         }
     }

@@ -17,7 +17,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.clean.domain.model.User
-import com.example.clean.ui.components.FlexibleSingleLineText
 import com.example.clean.ui.components.HorizontalDivider
 import com.example.clean.ui.theme.AppLightTheme
 
