@@ -16,7 +16,7 @@
   ![Screenshot_1709913814](https://github.com/dinkar1708/AndroidMVVMCleanArchitectureTemplate/assets/14831652/431ad656-08a1-4f6b-b7cf-fe8ee4f5ebc6)
 
 ## Mock Data for Testing
-- 
+- Documentation https://mockk.io/
 
 
 ## How to Use Resources
